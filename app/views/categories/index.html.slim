@@ -1,0 +1,10 @@
+h1 Open categories
+- @open_categories.each do |c|
+  a href=category_path(c) = c.name
+
+- unless @exclusive_categories.empty?
+  h1 Exclusive categories
+  - @exclusive_categories.each do |c|
+    a href=category_path(c) = c.name
+
+= button_to "Log out", destroy_user_session_path, method: :delete

@@ -1,0 +1,26 @@
+= image_tag(@category.avatar)
+h1 = @category.name
+h2 = @category.description
+
+- if @your_vote.present?
+  h3 = "You voted #{@your_vote.nominee.user.name}"
+- else
+  - if @category.random
+    = form_for(Vote.new, url: votes_path) do |f|
+        = f.hidden_field :user_id, value: @user.id
+        = f.hidden_field :category_id, value: @category.id
+        = f.submit "Vote random!"
+  - else
+    - @category.nominees.all.each do |n|
+      = form_for(Vote.new, url: votes_path) do |f|
+        = image_tag(n.user.avatar)
+        = f.hidden_field :user_id, value: @user.id
+        = f.hidden_field :nominee_id, value: n.id
+        = f.hidden_field :category_id, value: @category.id
+        = f.submit Vote
+- unless @category.is_open
+  h3 Votos
+  ul
+  - @votes.each do |v|
+    li = "#{v.user.name} voted #{v.nominee.user.name}"
+  h5 = "Winner #{Nominee.find(@winner[0]).user.name} with #{@winner[1]} points"

@@ -1,0 +1,4 @@
+h1 Results
+ul
+  - @winners.each do |w|
+    li = "Category #{w[0]} winner #{Nominee.find(w[1][0]).user.name} with #{w[1][1]} points"
