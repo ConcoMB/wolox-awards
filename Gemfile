@@ -64,6 +64,7 @@ gem 'pundit'
 
 # Exceptions Report
 gem 'rollbar'
+gem 'app_configuration'
 
 gem 'meta-tags'
 

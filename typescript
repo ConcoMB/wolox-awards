@@ -1,4 +1,4 @@
-Script started on Sat Nov 21 16:03:32 2015
+IScript started on Sat Nov 21 16:03:32 2015
 [1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wp-2015]1;..jects/wp-2015[0m[27m[24m[J[01;32m➜ [01;32m [36mwp-2015 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ccd script[1m/[0m[0m [?1l>
 ]2;cd script]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wp-2015/script]1;..p-2015/script[0m[27m[24m[J[01;32m➜ [01;32m [36mscript [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=lls[?1l>
 ]2;ls -G]1;ls[31mbootstrap[39;49m[0m   [31mpre-push.sh[39;49m[0m
@@ -26525,15 +26525,471 @@ Started GET "/assets/jquery_ujeptions.rb:21:in `call'
   Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (120.0ms)
-es/_route.html.erb (5.9ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (150.5ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.3ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
-  Rendered /Users/concomb/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (120.0ms)
+^CExiting
+^[[A[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=rails s[?1l>
+]2;rails s]1;rails=> Booting Puma
+=> Rails 4.2.4 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Puma 2.14.0 starting...
+* Min threads: 0, max threads: 16
+* Environment: development
+* Listening on tcp://localhost:3000
+^CExiting
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggca![?1l>
+]2;git commit -v -a --amend]1;gca![?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"~/Projects/wolox-awards/.git/COMMIT_EDITMSG" 124L, 6859C[>c[1;1H2
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Sat Nov 21 20:09:57 2015 -0300
+#
+# On branch master
+# Changes to be committed:
+#       modified:   Gemfile
+#       modified:   Gemfile.lock
+#       modified:   config/environments/production.rb
+#       modified:   typescript
+#
+# ------------------------ >8 ------------------------
+# Do not touch the line above.
+# Everything below will be removed.
+diff --git a/Gemfile b/Gemfile
+index 567a60b..d04d42c 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -64,6 +64,7 @@ gem 'pundit'
+
+ # Exceptions Report
+ gem 'rollbar'
++gem 'app_configuration'
+
+ gem 'meta-tags'
+
+diff --git a/Gemfile.lock b/Gemfile.lock
+index 08e5c41..f47d596 100644
+--- a/Gemfile.lock
++++ b/Gemfile.lock
+@@ -39,6 +39,7 @@ GEM[35;7H thread_safe (~> 0.3, >= 0.3.4)[36;7H tzinfo (~> 1.1)
+     addressable (2.3.8)
++    app_configuration (0.0.3)
+     arel (6.0.3)
+     ast (2.1.0)
+     astrolabe (1.3.1)
+@@ -392,6 +393,7 @@ PLATFORMS
+
+ DEPENDENCIES
+   active_model_serializers
++  app_configuration
+   awesome_print[1;1H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hq[?25l[48;1H[K[48;1H[?1l>[?12l^CExiting
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggca![?1l>
+]2;git commit -v -a --amend]1;gca![?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"~/Projects/wolox-awards/.git/COMMIT_EDITMSG" 124L, 6859C[>c[1;1H2
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Sat Nov 21 20:09:57 2015 -0300
+#
+# On branch master
+# Changes to be committed:
+#       modified:   Gemfile
+#       modified:   Gemfile.lock
+#       modified:   config/environments/production.rb
+#       modified:   typescript
+#
+# ------------------------ >8 ------------------------
+# Do not touch the line above.
+# Everything below will be removed.
+diff --git a/Gemfile b/Gemfile
+index 567a60b..d04d42c 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -64,6 +64,7 @@ gem 'pundit'
+
+ # Exceptions Report
+ gem 'rollbar'
++gem 'app_configuration'
+
+ gem 'meta-tags'
+
+diff --git a/Gemfile.lock b/Gemfile.lock
+index 08e5c41..f47d596 100644
+--- a/Gemfile.lock
++++ b/Gemfile.lock
+@@ -39,6 +39,7 @@ GEM[35;7H thread_safe (~> 0.3, >= 0.3.4)[36;7H tzinfo (~> 1.1)
+     addressable (2.3.8)
++    app_configuration (0.0.3)
+     arel (6.0.3)
+     ast (2.1.0)
+     astrolabe (1.3.1)
+@@ -392,6 +393,7 @@ PLATFORMS
+
+ DEPENDENCIES
+   active_model_serializers
++  app_configuration
+   awesome_print[1;1H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hq[?25l[48;1H[K[48;1H[?1l>[?12l[?25h[?1049l[master bb6bd42] 2
+ Date: Sat Nov 21 20:09:57 2015 -0300
+ 4 files changed, 43 insertions(+), 12 deletions(-)
+[1m[7m%[27m[1m[0m                                                                                                                                                                 minitest 5.8.2[K
+remote:        Using thread_safe 0.3.5[K
+remote:        Using builder 3.2.2[K
+remote:        Using erubis 2.7.0[K
+remote:        Using mini_portile 0.6.2[K
+remote:        Using rack 1.6.4[K
+remote:        Using mime-types 2.6.2[K
+remote:        Using arel 6.0.3[K
+remote:        Using bcrypt 3.1.10[K
+remote:        Using hitimes 1.2.3[K
+remote:        Using coffee-script-source 1.9.1.1[K
+remote:        Using execjs 2.6.0[K
+remote:        Using thor 0.19.1[K
+remote:        Using commonjs 0.2.7[K
+remote:        Using connection_pool 2.2.0[K
+remote:        Using orm_adapter 0.5.0[K
+remote:        Using tilt 1.4.1[K
+remote:        Using libv8 3.16.14.13[K
+remote:        Using bundler 1.9.7[K
+remote:        Using multi_json 1.11.2[K
+remote:        Using nested_form 0.3.2[K
+remote:        Using newrelic_rpm 3.14.0.305[K
+remote:        Using pg 0.18.3[K
+remote:        Using puma 2.14.0[K
+remote:        Using rails_serve_static_assets 0.0.4[K
+remote:        Using rails_stdout_logging 0.0.4[K
+remote:        Using remotipart 1.2.1[K
+remote:        Using safe_yaml 1.0.4[K
+remote:        Using sass 3.4.19[K
+remote:        Using redis 3.2.1[K
+remote:        Using ref 2.0.0[K
+remote:        Using rmagick 2.15.4[K
+remote:        Using temple 0.7.6[K
+remote:        Using tzinfo 1.2.2[K
+remote:        Using nokogiri 1.6.6.2[K
+remote:        Using mail 2.6.3[K
+remote:        Using timers 4.1.1[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using uglifier 2.7.2[K
+remote:        Using rack-test 0.6.3[K
+remote:        Using warden 1.2.3[K
+remote:        Using sprockets 3.4.0[K
+remote:        Using rack-protection 1.5.3[K
+remote:        Using less 2.6.0[K
+remote:        Using haml 4.0.7[K
+remote:        Using foreman 0.78.0[K
+remote:        Using rollbar 2.5.2[K
+minitest 5.8.2[K
+remote:        Using thread_safe 0.3.5[K
+remote:        Using builder 3.2.2[K
+remote:        Using erubis 2.7.0[K
+remote:        Using mini_portile 0.6.2[K
+remote:        Using rack 1.6.4[K
+remote:        Using mime-types 2.6.2[K
+remote:        Using arel 6.0.3[K
+remote:        Using bcrypt 3.1.10[K
+remote:        Using hitimes 1.2.3[K
+remote:        Using coffee-script-source 1.9.1.1[K
+remote:        Using execjs 2.6.0[K
+remote:        Using thor 0.19.1[K
+remote:        Using commonjs 0.2.7[K
+remote:        Using connection_pool 2.2.0[K
+remote:        Using orm_adapter 0.5.0[K
+remote:        Using tilt 1.4.1[K
+remote:        Using libv8 3.16.14.13[K
+remote:        Using bundler 1.9.7[K
+remote:        Using multi_json 1.11.2[K
+remote:        Using nested_form 0.3.2[K
+remote:        Using newrelic_rpm 3.14.0.305[K
+remote:        Using pg 0.18.3[K
+remote:        Using puma 2.14.0[K
+remote:        Using rails_serve_static_assets 0.0.4[K
+remote:        Using rails_stdout_logging 0.0.4[K
+remote:        Using remotipart 1.2.1[K
+remote:        Using safe_yaml 1.0.4[K
+remote:        Using sass 3.4.19[K
+remote:        Using redis 3.2.1[K
+remote:        Using ref 2.0.0[K
+remote:        Using rmagick 2.15.4[K
+remote:        Using temple 0.7.6[K
+remote:        Using tzinfo 1.2.2[K
+remote:        Using nokogiri 1.6.6.2[K
+remote:        Using mail 2.6.3[K
+remote:        Using timers 4.1.1[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using uglifier 2.7.2[K
+remote:        Using rack-test 0.6.3[K
+remote:        Using warden 1.2.3[K
+remote:        Using sprockets 3.4.0[K
+remote:        Using rack-protection 1.5.3[K
+remote:        Using less 2.6.0[K
+remote:        Using haml 4.0.7[K
+remote:        Using foreman 0.78.0[K
+remote:        Using rollbar 2.5.2[K
+remote:        Using rails_12factor 0.0.3[K
+remote:        Using redis-namespace 1.5.2[K
+remote:        Using slim 3.0.6[K
+remote:        Using activesupport 4.2.4[K
+remote:        Using therubyracer 0.12.2[K
+remote:        Using recipient_interceptor 0.1.2[K
+remote:        Using celluloid-essen sass-rails 5.0.2[K
+remote:        Using turbolinks 2.5.3[K
+remote:        Using devise 3.5.2[K
+remote:        Using inherited_resources 1.6.0[K
+remote:        Using loadjs 0.0.6[K
+remote:        Using metamagic 3.1.7[K
+remote:        Using twitter-bootstrap-rails 3.2.0[K
+remote:        Using rails_admin 0.7.0[K
+remote:        Using jquery-turbolinks 2.1.0[K
+remote:        Installing app_configuration 0.0.3[K
+remote:        Bundle complete! 61 Gemfile dependencies, 109 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into ./vendor/bundle.[K
+remote:        Bundle completed (2.51s)[K
+remote:        Cleaning up the bundler cache.[K
+remote: -----> Preparing app for Rails asset pipeline[K
+remote:        Running: rake assets:precompile[K
+remote:        [DEPRECATION] requiring "RMagick" is deprecated. Use "rmagick" instead[K
+remote:        Asset precompilation completed (2.99s)[K
+remote:        Cleaning assets[K
+remote:        Running: rake assets:clean[K
+remote:        [DEPRECATION] requiring "RMagick" is deprecated. Use "rmagick" instead[K
+remote: 
+remote: 
+remote: -----> Discovering process types[K
+remote:        Procfile declares types     -> web, worker[K
+remote:        Default types for buildpack -> console, rake[K
+remote: 
+remote: -----> Compressing... done, 54.2MB[K
+remote: -----> Launching... done, v13[K
+remote:        https://wolox-awards.herokuapp.com/ deployed to Heroku[K
+remote: 
+remote: Verifying deploy... done.[K
+To git@heroku.com:wolox-awards.git
+   05da980..bb6bd42  master -> master
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=[?1l>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggst[?1l>
+]2;git status]1;gstOn branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=g ccat .gitignore[1m [0m[0m [?1l>
+]2;cat .gitignore]1;cat*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+
+# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+config/secrets.yml
+
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+
+# these should all be checked in to normalise the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# if using bower-rails ignore default bower_comp[?1l>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggst[?1l>
+]2;git status]1;gstOn branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git[?1l>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=[?1l>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggca![?1l>
+]2;git commit -v -a --amend]1;gca![?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"~/Projects/wolox-awards/.git/COMMIT_EDITMSG" 458L, 21741C[>c[1;1H2
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Sat Nov 21 20:09:57 2015 -0300
+#
+# On branch master
+# Changes to be committed:
+#       modified:   .DS_Store
+#       modified:   .gitignore
+#       modified:   Gemfile
+#       modified:   Gemfile.lock
+#       modified:   config/environments/production.rb
+#       modified:   db/.DS_Store
+#       modified:   typescript
+#
+# Untracked files:
+#       config/.DS_Store
+#       config/secrets.yml
+#
+# ------------------------ >8 ------------------------
+# Do not touch the line above.
+# Everything below will be removed.
+diff --git a/.DS_Store b/.DS_Store
+index 5008ddf..12db7cf 100644
+Binary files a/.DS_Store and b/.DS_Store differ
+di[?1l>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=[?1l>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggca![?1l>
+]2;git commit -v -a --amend]1;gca![?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"~/Projects/wolox-awards/.git/COMMIT_EDITMSG" 458L, 21741C[>c[1;1H2
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Sat Nov 21 20:09:57 2015 -0300
+#
+# On branch master
+# Changes to be committed:
+#       modified:   .DS_Store
+#       modified:   .gitignore
+#       modified:   Gemfile
+#       modified:   Gemfile.lock
+#       modified:   config/environments/production.rb
+#       modified:   db/.DS_Store
+#       modified:   typescript
+#
+# Untracked files:
+#       config/.DS_Store
+#       config/secrets.yml
+#
+# ------------------------ >8 ------------------------
+# Do not touch the line above.
+# Everything below will be removed.
+diff --git a/.DS_Store b/.DS_Store
+index 5008ddf..12db7cf 100644
+Binary files a/.DS_Store and b/.DS_Store differ
+diff --git a/.gitignore b/.gitignore
+index f786a90..91ca3d6 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -12,10 +12,6 @@ capybara-*.html
+ rerun.txt
+ pickle-email-*.html
+
+-# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+-config/initializers/secret_token.rb
+-config/?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"~/Projects/wolox-awards/.git/COMMIT_EDITMSG" 480L, 22647C[>c[1;1H2
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Sat Nov 21 20:09:57 2015 -0300
+#
+# On branch master
+# Changes to be committed:
+#       modified:   .DS_Store
+#       modified:   .gitignore
+#       modified:   Gemfile
+#       modified:   Gemfile.lock
+#       new file:   config/.DS_Store
+#       modified:   config/environments/production.rb
+#       new file:   config/secrets.yml
+#       modified:   db/.DS_Store
+#       modified:   typescript
+#
+# ------------------------ >8 ------------------------
+# Do not touch the line above.
+# Everything below will be removed.
+diff --git a/.DS_Store b/.DS_Store
+index 5008ddf..12db7cf 100644
+Binary files a/.DS_Store and b/.DS_Store differ
+diff --git a/.gitignore b/.gitignore
+index f786a90..91ca3d6 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -12,10 +12,6 @@ capybara-*.html
+ rerun.txt
+ pickle-email-*.html
+
+-# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+-config/initializers/secret_token.rb
+-config/secrets.yml
+-
+ ## Environment normalisation:
+ /.bundle
+ /vendor/bundle
+diff --git a/Gemfile b/Gemfile
+index 567a60b..d04d42c 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -64,6 +64,7 @@ gem 'pundit'
+
+ # Exceptions Report[1;1H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hq[?25l[48;1H[K[48;1H[?1l>[?12l[?25h[?1049l[master 06257f9] 2
+ Date: Sat Nov 21 20:09:57 2015 -0300
+ 9 files changed, 362 insertions(+), 22 deletions(-)
+ create mode 100644 config/.DS_Store
+ create mode 100644 config/secrets.yml
+[1m[7m%[27m[1m[0m                                                                                                      ?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"~/Projects/wolox-awards/.git/COMMIT_EDITMSG" 480L, 22647C[>c[1;1H2
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Sat Nov 21 20:09:57 2015 -0300
+#
+# On branch master
+# Changes to be committed:
+#       modified:   .DS_Store
+#       modified:   .gitignore
+#       modified:   Gemfile
+#       modified:   Gemfile.lock
+#       new file:   config/.DS_Store
+#       modified:   config/environments/production.rb
+#       new file:   config/secrets.yml
+#       modified:   db/.DS_Store
+#       modified:   typescript
+#
+# ------------------------ >8 ------------------------
+# Do not touch the line above.
+# Everything below will be removed.
+diff --git a/.DS_Store b/.DS_Store
+index 5008ddf..12db7cf 100644
+Binary files a/.DS_Store and b/.DS_Store differ
+diff --git a/.gitignore b/.gitignore
+index f786a90..91ca3d6 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -12,10 +12,6 @@ capybara-*.html
+ rerun.txt
+ pickle-email-*.html
+
+-# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+-config/initializers/secret_token.rb
+-config/secrets.yml
+-
+ ## Environment normalisation:
+ /.bundle
+ /vendor/bundle
+diff --git a/Gemfile b/Gemfile
+index 567a60b..d04d42c 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -64,6 +64,7 @@ gem 'pundit'
+
+ # Exceptions Report[1;1H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hq[?25l[48;1H[K[48;1H[?1l>[?12l[?25h[?1049l[master 06257f9] 2
+ Date: Sat Nov 21 20:09:57 2015 -0300
+ 9 files changed, 362 insertions(+), 22 deletions(-)
+ create mode 100644 config/.DS_Store
+ create mode 100644 config/secrets.yml
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=gca!ga -A  g  [?1l>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=[?1l>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggst[?1l>
+]2;git status]1;gstOn branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                           ]2;concomb@Conrados-MacBook-Pro: ~/Projects/wolox-awards]1;../wolox-awards[0m[27m[24m[J[01;32m➜ [01;32m [36mwolox-awards [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=
