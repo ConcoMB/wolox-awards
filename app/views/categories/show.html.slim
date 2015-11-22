@@ -23,4 +23,5 @@ h2 = @category.description
   ul
   - @votes.each do |v|
     li = "#{v.user.name} voted #{v.nominee.user.name}"
-  h5 = "Winner #{Nominee.find(@winner[0]).user.name} with #{@winner[1]} points"
+  - if @winner
+    h5 = "Winner #{Nominee.find(@winner[0]).user.name} with #{@winner[1]} points"
