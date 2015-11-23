@@ -91,7 +91,7 @@ Rails.application.configure do
     address: mail.address,
     port: mail.port.to_i,
     domain: mail.domain,
-    user_name: mail.user_name,
+    user_name: mail.user,
     password: mail.password,
     authentication: mail.authentication
   }

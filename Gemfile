@@ -65,7 +65,7 @@ gem 'pundit'
 # Exceptions Report
 gem 'rollbar'
 gem 'app_configuration'
-
+gem 'fog'
 gem 'meta-tags'
 
 # Postgres Insights
