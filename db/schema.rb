@@ -67,12 +67,6 @@ ActiveRecord::Schema.define(version: 20151121223801) do
   create_table "voters", force: :cascade do |t|
     t.integer "user_id"
     t.integer "category_id"
-    t.integer "vote_id"
-  end
-
-  create_table "voterss", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "category_id"
   end
 
   create_table "votes", force: :cascade do |t|

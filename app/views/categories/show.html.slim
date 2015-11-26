@@ -14,6 +14,7 @@ h2 = @category.description
     - @category.nominees.all.each do |n|
       = form_for(Vote.new, url: votes_path) do |f|
         = image_tag(n.user.avatar)
+        span = n.user.name
         = f.hidden_field :user_id, value: @user.id
         = f.hidden_field :nominee_id, value: n.id
         = f.hidden_field :category_id, value: @category.id
