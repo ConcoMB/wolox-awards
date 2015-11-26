@@ -8,9 +8,9 @@
 # encoding: utf-8
 
 
-conco = User.create!(email: 'cmaderblanco@wolox.com.ar', password: 'password', password_confirmation: 'password', name: "Conco")
-fagus = User.create!(email: 'agustina.fainguersch@wolox.com.ar', password: 'password', password_confirmation: 'password', name: "fabus")
-gabo = User.create!(email: 'gabriel.zanzotti@wolox.com.ar', password: 'password', password_confirmation: 'password', name: "gabo")
+conco = User.create!(admin:true, email: 'cmaderblanco@wolox.com.ar', password: 'password', password_confirmation: 'password', name: "Conco")
+fagus = User.create!(admin:true, email: 'agustina.fainguersch@wolox.com.ar', password: 'password', password_confirmation: 'password', name: "fabus")
+gabo = User.create!(admin:true, email: 'gabriel.zanzotti@wolox.com.ar', password: 'password', password_confirmation: 'password', name: "gabo")
 
 wcapo = Category.create!(name: 'W capo', description: 'el mas capo', is_open: true)
 random = Category.create!(name: 'W random', description: 'el mas random', is_open: true, random: true)

@@ -9,7 +9,10 @@ class HomeController < ApplicationController
     check_user
     redirect_to :root unless @user.admin
      @winners = Category.all.map do |c|
-      [c.name, Vote.where(category: c).group(:nominee_id).count.max_by { |k,v| v }]
+      max_points = Vote.where(category: c).group(:nominee_id).count.max_by { |k,v| v }
+      max_points = max_points.nil? ? nil : max_points[1]
+      w = Vote.where(category: c).group(:nominee_id).count.select { |u, p| p == max_points }
+      [c.name, w]
     end
   end
 

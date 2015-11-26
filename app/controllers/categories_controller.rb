@@ -11,7 +11,8 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
     redirect_to :back if !@user.can_vote?(@category)
     @votes = Vote.where(category: @category)
-    @winner = Vote.where(category: @category).group(:nominee_id).count.max_by { |k,v| v }
+    max_points = Vote.where(category: @category).group(:nominee_id).count.max_by { |k,v| v }
+    @winners = Vote.where(category: @category).group(:nominee_id).count.select { |u, p| p == max_points }
     @your_vote = Vote.find_by(category: @category, user: @user)
   end
 
