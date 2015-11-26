@@ -11,7 +11,7 @@ h2 = @category.description
         = f.hidden_field :category_id, value: @category.id
         = f.submit "Vote random!"
   - else
-    - @category.nominees.all.each do |n|
+    - @category.nominees.includes(:user).each do |n|
       = form_for(Vote.new, url: votes_path) do |f|
         = image_tag(n.user.avatar)
         span = n.user.name
