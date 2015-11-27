@@ -88,7 +88,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     openssl_verify_mode: mail.openssl_verify_mode,
     enable_starttls_auto: mail.enable_starttls_auto == 'true',
-    address: mail.host,
+    address: mail.address,
     port: mail.port.to_i,
     domain: mail.domain,
     user_name: mail.user,
