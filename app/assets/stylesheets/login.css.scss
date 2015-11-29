@@ -1,0 +1,24 @@
+.login-container {
+  width: 400px;
+  padding: 20px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  .login-logo {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .login-submit-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .login-links-container {
+    text-align: left;
+  }
+}

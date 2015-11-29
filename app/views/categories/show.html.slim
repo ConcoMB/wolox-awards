@@ -1,26 +1,43 @@
-= image_tag(@category.avatar)
-h1 = @category.name
-h2 = @category.description
+.category-detail-container
+  = image_tag(@category.avatar, class: 'category-detail-image')
+  .category-detail-info
+    h1.category-detail-info-headline
+      = @category.name
+    p.category-detail-info-description
+      = @category.description
 
 - if @your_vote.present?
-  h3 = "You voted #{@your_vote.nominee.user.name}"
+  .notice-container
+    h3.notice-container-content
+      = "You voted #{@your_vote.nominee.user.name}"
 - else
   - if @category.random
-    = form_for(Vote.new, url: votes_path) do |f|
+    .random-vote-container
+      = form_for(Vote.new, url: votes_path) do |f|
         = f.hidden_field :user_id, value: @user.id
         = f.hidden_field :category_id, value: @category.id
         = f.submit "Vote random!"
   - else
-    - @category.nominees.includes(:user).each do |n|
-      = form_for(Vote.new, url: votes_path) do |f|
-        = image_tag(n.user.avatar)
-        span = n.user.name
-        = f.hidden_field :user_id, value: @user.id
-        = f.hidden_field :nominee_id, value: n.id
-        = f.hidden_field :category_id, value: @category.id
-        = f.submit Vote
+    .headline-container
+      h1.headline-title
+        | Nominees
+      hr.headline-bar
+    .nominees-container
+      - @category.nominees.includes(:user).each do |n|
+        .nominee-container
+          = image_tag(n.user.avatar, class: 'nominee-avatar')
+          h1.nominee-name
+            = n.user.name
+          = form_for(Vote.new, url: votes_path) do |f|
+            = f.hidden_field :user_id, value: @user.id
+            = f.hidden_field :nominee_id, value: n.id
+            = f.hidden_field :category_id, value: @category.id
+            = f.submit "Vote"
 - unless @category.is_open
-  h3 Votos
+  .headline-container
+      h1.headline-title
+        | Votes
+      hr.headline-bar
   ul
   - @votes.each do |v|
     li = "#{v.user.name} voted #{v.nominee.user.name}"
