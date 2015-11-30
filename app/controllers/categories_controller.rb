@@ -10,6 +10,7 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     redirect_to :back if !@user.can_vote?(@category)
+    @nominees = @category.nominees.includes(:user).shuffle
     @votes = Vote.where(category: @category)
     max_points = Vote.where(category: @category).group(:nominee_id).count.max_by { |k,v| v }
     @winners = Vote.where(category: @category).group(:nominee_id).count.select { |u, p| p == max_points }

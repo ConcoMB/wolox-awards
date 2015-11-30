@@ -1,15 +1,16 @@
-h1 Results
-ul
-  - @winners.each do |w|
-    - if w && w[1]
-      li = "Category #{w[0]}:"
-      - if w[1].length == 0
-        = "No results yet"
-      - elsif w[1].length == 1
-        = "winner! "
-      - else
-        = "Tie! "
-      br
-      - w[1].each do |u|
-        = "#{Nominee.find(u[0]).user.name} with #{u[1]} points"
+.section
+  h1 Results
+  ul
+    - @winners.each do |w|
+      - if w && w[1]
+        li = "Category #{w[0]}:"
+        - if w[1].length == 0
+          = "No results yet"
+        - elsif w[1].length == 1
+          = "winner! "
+        - else
+          = "Tie! "
         br
+        - w[1].each do |u|
+          = "#{Nominee.find(u[0]).user.name} with #{u[1]} points"
+          br

@@ -24,7 +24,7 @@
           | Nominees
         hr.headline-bar
       .nominees-container
-        - @category.nominees.includes(:user).each do |n|
+        - @nominees.each do |n|
           .nominee-container
             = image_tag(n.user.avatar, class: 'nominee-avatar')
             h1.nominee-name
