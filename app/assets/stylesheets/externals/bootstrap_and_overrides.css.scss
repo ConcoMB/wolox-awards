@@ -1,0 +1,25 @@
+.navbar {
+  background: $super-translucent-black;
+
+  .navbar-nav {
+    li {
+      border-bottom: 2px solid $white;
+
+      &:hover {
+        border-bottom: 2px solid $wolox-blue;
+      }
+
+      a {
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $wolox-blue;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

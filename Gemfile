@@ -25,6 +25,8 @@ gem 'less-rails'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 
+gem 'bootstrap-sass', '~> 3.3.5'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'rails_admin'

@@ -1,15 +1,23 @@
-h1 Open categories
-- @open_categories.each do |c|
-  a href=category_path(c)
-    = image_tag(c.avatar)
-    = c.name
-  hr
-
+.section
+  .headline-container
+    h1.headline-title
+      | Open categories
+    hr.headline-bar
+  .categories-container
+    - @open_categories.each do |c|
+      = link_to(category_path(c), class: 'category-container') do
+        = image_tag(c.avatar, class: 'category-image')
+        h2.category-title
+          = c.name
 - unless @exclusive_categories.empty?
-  h1 Exclusive categories
-  - @exclusive_categories.each do |c|
-    a href=category_path(c)
-      = image_tag(c.avatar)
-      = c.name
-    hr
-= button_to "Log out", destroy_user_session_path, method: :delete
+  .section
+    .headline-container
+      h1.headline-title
+        | Exclusive categories
+      hr.headline-bar
+    .categories-container
+      - @exclusive_categories.each do |c|
+        = link_to(category_path(c), class: 'category-container') do
+          = image_tag(c.avatar, class: 'category-image')
+          h2.category-title
+            = c.name

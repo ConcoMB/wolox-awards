@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700);
+body {
+  background: asset-url('bg.png');
+  font-family: 'Josefin Sans', Tahoma;
+  color: $white;
+}
+
+.input-field-container {
+  width: 100%;
+  margin-bottom: 30px;
+
+  .input-field {
+    font-size: 16px;
+    width: 100%;
+    border-radius: 2px;
+    height: 50px;
+    border: 1px solid $wolox-green;
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+.fill-button {
+  background: $wolox-blue;
+  text-transform: uppercase;
+  border-radius: 2px;
+  height: 50px;
+  border: none;
+}
+
+.input-field-checkbox-container {
+  text-align: left;
+  margin-top: 10px;
+
+  .input-field-checkbox {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+  }
+
+  .input-field-checkbox-label {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 15px;
+    font-weight: 300;
+    margin-left: 5px;
+  }
+}
+
+a {
+  color: $wolox-blue;
+
+  &:hover {
+    color: lighten($wolox-blue, 20%);
+    text-decoration: none;
+  }
+}
+
+.section {
+  padding: 40px;
+  text-align: center;
+}
+
+.headline-container {
+  margin-bottom: 40px;
+
+  .headline-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .headline-bar {
+    width: 400px;
+  }
+}
+
+

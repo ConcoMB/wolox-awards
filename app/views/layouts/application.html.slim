@@ -1,11 +1,24 @@
 doctype html
 html
   head
-    title RailsBootstrap
+    title Wolox - Awards
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
     = metamagic
   body
-    = render 'layouts/trello_alert'
-    = yield
+    - if current_user
+      nav#navbar.navbar role="navigation"
+        .container
+          .navbar-header
+            button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                = link_to "Log out", destroy_user_session_path, method: :delete
+    .content
+      = yield
