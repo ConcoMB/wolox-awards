@@ -1,11 +1,15 @@
-h2
-  | Resend confirmation instructions
-= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
-  = devise_error_messages!
-  .field
-    = f.label :email
-    br
-    = f.email_field :email, autofocus: true
-  .actions
-    = f.submit "Resend confirmation instructions"
-= render "devise/shared/links"
+.login-container
+  = image_tag 'wolox_logo.png', class: 'login-logo'
+  h2
+    | Resend confirmation instructions
+  = form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+    = devise_error_messages!
+    .input-field-container
+      = f.email_field :email, autofocus: true, placeholder: "email"
+      - if devise_mapping.rememberable?
+        .input-field-checkbox-container
+          = f.check_box :remember_me, class: 'input-field-checkbox'
+          = f.label :remember_me, class: 'input-field-checkbox-label'
+      = f.submit "Resend confirmation instructions", class: 'fill-button login-submit-button'
+  .login-links-container
+    = render "devise/shared/links"
