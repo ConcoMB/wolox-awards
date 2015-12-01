@@ -29,7 +29,7 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
-
+.mail.yml
 config/.DS_Store
 .DS_Store
 typescript

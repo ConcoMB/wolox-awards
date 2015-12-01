@@ -1,7 +1,7 @@
 class PictureUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
 
-  process resize_to_fit: [200, 200]
+  process resize_to_fit: [300, 300]
 
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"

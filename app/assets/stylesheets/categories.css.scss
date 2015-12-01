@@ -46,10 +46,11 @@
   .category-detail-info {
     display: inline-block;
     vertical-align: top;
-    padding: 40px;
+    padding: 20px 40px;
     width: calc(100% - 200px);
     height: 100%;
     background: $translucent-black;
+    text-align: left;
 
     .category-detail-info-headline {
       font-size: 32px;
