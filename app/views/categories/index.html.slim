@@ -6,7 +6,10 @@
   .categories-container
     - @open_categories.each do |c|
       = link_to(category_path(c), class: 'category-container') do
-        = image_tag(c.avatar, class: 'category-image')
+        - if current_user.voted?(c)
+          = image_tag(@your_votes[c.id].avatar, class: 'category-image')
+        - else
+          = image_tag(c.avatar, class: 'category-image')
         h2.category-title
           = c.name
 - unless @exclusive_categories.empty?

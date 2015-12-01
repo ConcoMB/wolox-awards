@@ -5,6 +5,7 @@ class CategoriesController < ApplicationController
   def index
     @open_categories = Category.where(is_open: true)
     @exclusive_categories = Voter.where(user: @user).map { |a| a.category }
+    @your_votes = Vote.where(user: current_user).map { |v| { v.category.id => v.nominee.user } }.reduce(&:merge)
   end
 
   def show
