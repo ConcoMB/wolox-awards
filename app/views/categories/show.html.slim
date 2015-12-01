@@ -22,7 +22,7 @@
         | Nominees
       hr.headline-bar
     .nominees-container
-      - @category.nominees.includes(:user).each do |n|
+      - @nominees.each do |n|
         .nominee-container
           .nominee-info-container
             = image_tag(n.user.avatar, class: 'nominee-info-avatar')
