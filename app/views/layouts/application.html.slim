@@ -6,6 +6,7 @@ html
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
     = metamagic
+    = favicon_link_tag 'favicon.jpg'
   body
     - if current_user
       nav#navbar.navbar role="navigation"
@@ -17,6 +18,9 @@ html
               span.icon-bar
               span.icon-bar
           .collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-left
+              a href=root_path
+                h2#home-link.budmo.yellow Wolox awards
             ul.nav.navbar-nav.navbar-right
               li
                 = link_to "Cerrar sesión", destroy_user_session_path, method: :delete

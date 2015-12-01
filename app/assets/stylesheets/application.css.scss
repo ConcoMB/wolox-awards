@@ -9,3 +9,16 @@
 @import "login";
 @import "categories";
 @import "votes";
+
+@font-face {
+  font-family: budmo;
+  src: asset-url("budmo.otf");
+}
+
+.budmo {
+  font-family: budmo;
+}
+
+.yellow {
+  color: #ffe680;
+}

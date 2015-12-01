@@ -1,5 +1,5 @@
 .login-container
-  = image_tag 'wolox_logo.png', class: 'login-logo'
+  h1#logo.budmo.yellow Wolox awards
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     .input-field-container
       = f.email_field :email, autofocus: true, placeholder: 'email', class: 'input-field'

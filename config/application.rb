@@ -49,6 +49,8 @@ module RailsBootstrap
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    config.sass.load_paths << File.expand_path('../../vendor/assets/vendor/')
+
     # For Heroku deployments
     config.assets.initialize_on_precompile = true
   end
