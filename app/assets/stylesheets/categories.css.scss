@@ -2,7 +2,6 @@
   display: inline-block;
   width: 300px;
   height: 300px;
-  overflow: hidden;
   margin: 20px;
   position: relative;
   border: 2px solid $wolox-blue;
@@ -10,9 +9,10 @@
 
   .category-image {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 296px;
+    height: 296px;
+    top: 0;
+    left: 0;
   }
 
   .category-title {
@@ -29,3 +29,115 @@
     background: $translucent-black;
   }
 }
+
+.category-detail-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0;
+  height: 200px;
+
+  .category-detail-image {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .category-detail-info {
+    display: inline-block;
+    vertical-align: top;
+    padding: 40px;
+    width: calc(100% - 200px);
+    height: 100%;
+    background: $translucent-black;
+
+    .category-detail-info-headline {
+      font-size: 32px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .category-detail-info-description {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}
+
+.nominees-container {
+  text-align: center;
+}
+
+.nominee-container {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+
+  .nominee-info-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+    .nominee-info-avatar {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .nominee-info-name {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: $translucent-black;
+      padding: 5px 0;
+      font-weight: 300;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .nominee-vote {
+    width: 100%;
+    font-weight: bold;
+  }
+}
+
+.votes-container {
+  max-width: 400px;
+  margin: 0 auto;
+
+  .vote {
+    font-size: 20px;
+  }
+}
+
+.notice-container {
+  border: 1px solid $wolox-green;
+  padding: 15px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  border-radius: 5px;
+
+  .notice-content {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: $wolox-green;
+  }
+}
+
+.random-vote-container {
+  max-width: 600px;
+  display: block;
+  margin: 40px auto;
+  .random-vote-button {
+    width: 100%;
+  }
+}
+

@@ -1,4 +1,9 @@
-h1 Thank you for voting
-
-h3 = "You voted #{@vote.nominee.user.name} for the category #{@vote.category.name}"
-a href=categories_path Volver
+.vote-created-container
+  .headline-container
+    h1.headline-title
+      | Thank you for voting
+    hr.headline-bar
+  .notice-container
+    h3.notice-content
+      | You voted #{@vote.nominee.user.name} for the category #{@vote.category.name}
+  = link_to 'Volver', categories_path, class: 'fill-button vote-created-button'

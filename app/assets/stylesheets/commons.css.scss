@@ -27,6 +27,12 @@ body {
   border-radius: 2px;
   height: 50px;
   border: none;
+  cursor: pointer;
+  color: $white;
+
+  &:hover {
+    background: darken($wolox-blue, 10%);
+  }
 }
 
 .input-field-checkbox-container {
@@ -67,6 +73,7 @@ a {
 
 .headline-container {
   margin-bottom: 40px;
+  text-align: center;
 
   .headline-title {
     text-transform: uppercase;

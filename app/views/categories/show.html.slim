@@ -8,15 +8,14 @@
 
 - if @your_vote.present?
   .notice-container
-    h3.notice-container-content
-      = "You voted #{@your_vote.nominee.user.name}"
+    h3.notice-content
+      | You voted #{@your_vote.nominee.user.name}
 - else
   - if @category.random
-    .random-vote-container
-      = form_for(Vote.new, url: votes_path) do |f|
-        = f.hidden_field :user_id, value: @user.id
-        = f.hidden_field :category_id, value: @category.id
-        = f.submit "Vote random!"
+    = form_for(Vote.new, url: votes_path, html: {class: 'random-vote-container'}) do |f|
+      = f.hidden_field :user_id, value: @user.id
+      = f.hidden_field :category_id, value: @category.id
+      = f.submit "Vote random!", class: 'fill-button random-vote-button'
   - else
     .headline-container
       h1.headline-title
@@ -25,19 +24,21 @@
     .nominees-container
       - @category.nominees.includes(:user).each do |n|
         .nominee-container
-          = image_tag(n.user.avatar, class: 'nominee-avatar')
-          h1.nominee-name
-            = n.user.name
+          .nominee-info-container
+            = image_tag(n.user.avatar, class: 'nominee-info-avatar')
+            h1.nominee-info-name
+              = n.user.name
           = form_for(Vote.new, url: votes_path) do |f|
             = f.hidden_field :user_id, value: @user.id
             = f.hidden_field :nominee_id, value: n.id
             = f.hidden_field :category_id, value: @category.id
-            = f.submit "Vote"
+            = f.submit "Vote", class: 'fill-button nominee-vote'
 - unless @category.is_open
   .headline-container
       h1.headline-title
         | Votes
       hr.headline-bar
-  ul
-  - @votes.each do |v|
-    li = "#{v.user.name} voted #{v.nominee.user.name}"
+  ul.votes-container
+    - @votes.each do |v|
+      li.vote
+        | #{v.user.name} voted #{v.nominee.user.name}
