@@ -3,8 +3,9 @@ class CategoriesController < ApplicationController
   before_filter :check_user
 
   def index
-    @open_categories = Category.where(is_open: true)
+    @open_categories = Category.where(is_open: true).order(id: :asc)
     @exclusive_categories = Voter.where(user: @user).map { |a| a.category }
+    @all_categories = Category.all.order(id: :asc)
     @your_votes = Vote.where(user: current_user).map { |v| { v.category.id => v.nominee.user } }.reduce(&:merge)
   end
 

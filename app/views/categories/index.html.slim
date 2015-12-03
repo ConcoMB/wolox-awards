@@ -30,7 +30,7 @@
       h1.headline-title
         | Todas las categorías
       hr.headline-bar
-      - Category.all.each do |c|
+      - @all_categories.each do |c|
         = link_to(category_path(c), class: 'category-container') do
           - if current_user.voted?(c)
             = image_tag(@your_votes[c.id].avatar, class: 'category-image')
