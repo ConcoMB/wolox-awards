@@ -33,12 +33,12 @@
             = f.hidden_field :nominee_id, value: n.id
             = f.hidden_field :category_id, value: @category.id
             = f.submit "Vote", class: 'fill-button nominee-vote'
-  - if !@category.is_open && !@votes.empty?
-    .headline-container
-        h1.headline-title
-          | Votes
-        hr.headline-bar
-    ul.votes-container
-      - @votes.each do |v|
-        li.vote
-          | #{v.user.name} voted #{v.nominee.user.name}
+- if !@category.is_open && !@votes.empty?
+  .headline-container
+      h1.headline-title
+        | Votes
+      hr.headline-bar
+  ul.votes-container
+    - @votes.each do |v|
+      li.vote
+        | #{v.user.name} voted #{v.nominee.user.name}
