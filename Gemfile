@@ -31,6 +31,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'jquery-rails'
 gem 'rails_admin'
 gem 'loadjs'
+gem "highcharts-rails", "~> 3.0.0"
 
 gem 'carrierwave'
 gem 'rmagick'

@@ -1,15 +1,5 @@
 .section
   h1 Results
-  - @winners.each do |w|
-    - if w && w[1]
-      h4 = "Categoría #{w[0]}:"
-      - if w[1].length == 0
-        span = "Sin resultados"
-        br
-      - elsif w[1].length == 1
-        span = "ganador! "
-      - else
-        span = "empate! "
-      - w[1].each do |u|
-        span = "#{Nominee.find(u[0]).user.name} with #{u[1]} points"
-        br
+  - @results.each do |w|
+    - unless w.empty?
+      .charts-container data-name=w[0] data-results=w[1]
