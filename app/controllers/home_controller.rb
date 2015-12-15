@@ -7,7 +7,7 @@ class HomeController < ApplicationController
 
   def results
     check_user
-    redirect_to :root unless @user.admin
+    redirect_to :root if @user.nil? || !@user.admin
     @results = Category.all.map do |c|
       r = Vote.where(category: c).group(:nominee_id).count
       res = ""
