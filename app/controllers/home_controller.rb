@@ -13,7 +13,8 @@ class HomeController < ApplicationController
       res = ""
       r.each { |a,b| res += "#{Nominee.find(a).user.name},#{b};" }
       res = res[0...-1]
-      [c.name, res]
+      count = Vote.where(category: c).size
+      [c.name, res, count]
     end
   end
 

@@ -1,6 +1,6 @@
 .section
   h1 Results
   - @results.each do |w|
-    span = "Votes: #{w[1].split(";").count}"
+    span = "Votes: #{w[2]}"
     - unless w.empty?
       .charts-container data-name=w[0] data-results=w[1]
